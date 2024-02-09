@@ -93,9 +93,7 @@ import ClassifyLegend from "@/components/ClassifyLegend.vue";
           <p class="leading-relaxed">
             The best-supervised classification algorithm was determined as Random Forest Classification with and overall accuracy of 82% for 2004 and 82% for 2016.
             Peatland's health condition seemed to increase with an increase in Active flush, which experienced a significant increase from 2016 when the second restoration initiatives began, 
-            indicating ongoing restoration efforts. Marginal and submarginal decreased indicating a decrease in the degradation and an increase in restoration efforts. 
-    
-            Remote sensing is crucial in detecting patterns of earth observation and documenting high detail spatial changes. The results have highlighted
+            indicating ongoing restoration efforts. Marginal and submarginal decreased indicating a decrease in the degradation and an increase in restoration efforts. Remote sensing is crucial in detecting patterns of earth observation and documenting high detail spatial changes. The results have highlighted
             the efforts of different institutions and projects, such as the EU Living project, funded by the EU Life Fund in collaboration with NPWS and National Heritage from 2016 to 2021. 
             Consistent & innovative approaches in the monitoring of peat bogs are important in the conservation and rejuvenation of peatland habitat with the goal of conserving environmental
             areas and climate change mitigation.
