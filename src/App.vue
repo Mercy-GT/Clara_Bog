@@ -46,13 +46,12 @@ import ClassifyLegend from "@/components/ClassifyLegend.vue";
             <p class="leading-relaxed">
               Landsat 5 and Landsat 8 satellite imagery spanning from 1988, 1995, 2004, 2009, 2016 and 2023 is acquired using the
               Google Earth engine. Training and validation datasets were established utilising field data from NPWS Ecotope surveys
-              conducted in 2005, 2009 and 2016; providing ground truth information of different Ecotope types NDVI and NDWI images are
-              then generated from the Landsat data to assess vegetation and water content over time. NDVI quantifies vegetation health and
+              conducted in 2005, 2009 and 2016; providing ground truth information of different ecotope type. NDVI is used to quantifies vegetation health and
               density while NDWI indicates water content.
-              Two machine learning algorithms are evaluated; Random Forest (RF) and Support Vector Machine (SVM) classify the
+              Random Forest (RF) and Support Vector Machine (SVM) are utilized to classify the
               peatland cover types and distinguish between various vegetation and land cover classes. The accuracy of the classification
-              models is evaluated using metrics such as Kappa, overall accuracy, and Producer accuracy. Using Python programming,
-              Python-based prediction models are developed to forecast trends based on historical data as well as change detection
+              models is evaluated using metrics such as Kappa, overall accuracy, and Producer accuracy. Using Python Pickle library,
+            two prediction models are developed to forecast trends based on historical data as well as change detection
               models that identify alterations in the peatland landscape. To enhance accessibility and visualisation, an analysis app
               within GEE and a dedicated monitoring website are developed, providing interactive tools for stakeholders.
             </p>
@@ -95,8 +94,8 @@ import ClassifyLegend from "@/components/ClassifyLegend.vue";
       <div class="my-3 grid grid-cols-2 gap-2">
         <div>
           <p class="leading-relaxed">
-            Random Forest Classification was determined as the best-supervised classification with an overall accuracy of
-            82% for 2004 and 82% for 2016. Active flush areas showed slight growth until 2004, stayed steady until 2016, then
+            The best-supervised classification algorithm was determined as Random Forest Classification with and overall accuracy of 82% for 2004 and 82% for 2016.
+            Active flush areas showed slight growth until 2004, stayed steady until 2016, then
             experienced a significant increase, possibly indicating the ongoing restoration efforts. Conversely, submarginal zones
             rose until 2004 but steadily declined afterward, likely due to drainage or peat extraction impacting these regions
             negatively. Marginal and subcentral areas consistently decreased, potentially signifying ongoing habitat loss.
