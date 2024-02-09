@@ -37,22 +37,19 @@ import ClassifyLegend from "@/components/ClassifyLegend.vue";
 
       <div class="my-5">
         <p class="my-3">
-          Peatlands are yet to be documented spatially with a high level of detail for simulation of the earth’s system. There have been
-          recommendations for effective monitoring, FAO report 2020, policy documents and global wetland loss over 3 decades.
-          Significant for decision making and mitigation of climate change impacts
+         Peatlands are the only land-based solution to sequester carbon and hence their protection is paramount in climate change mitigation.
+          They are often overlooked in detailed spatial documentation compared to significant land use changes, having suffered extensive drainage for human needs, 
+          impacting greenhouse gas emissions and ecological balance. This projectcontributes to geographic knowledge by mapping the evolution of Clara peat bog. 
+          
         </p>
         <div class="grid grid-cols-2 my-3">
           <div>
             <p class="leading-relaxed">
-              Landsat 5 and Landsat 8 satellite imagery spanning from 1988, 1995, 2004, 2009, 2016 and 2023 is acquired using the
-              Google Earth engine. Training and validation datasets were established utilising field data from NPWS Ecotope surveys
-              conducted in 2005, 2009 and 2016; providing ground truth information of different ecotope type. NDVI is used to quantifies vegetation health and
-              density while NDWI indicates water content.
-              Random Forest (RF) and Support Vector Machine (SVM) are utilized to classify the
-              peatland cover types and distinguish between various vegetation and land cover classes. The accuracy of the classification
-              models is evaluated using metrics such as Kappa, overall accuracy, and Producer accuracy. Using Python Pickle library,
-            two prediction models are developed to forecast trends based on historical data as well as change detection
-              models that identify alterations in the peatland landscape. To enhance accessibility and visualisation, an analysis app
+              Leveraging Landsat 5 and 8 in the Google Earth Engine application, the study utilizes NDVI and NDWI analysis to discern degradation, revegetation, and rewetting 
+          restoration efforts.The composite images undergo comprehensive support vector machine and random forest classification over a five-decade timeframe from 1988, 1995, 2004, 
+              2009, 2016 and 2023. Ecotope datasets are used for data training and validation. 
+              Two predictive models were then created using python pickle libraries that predicted classification for other years. The accuracy of the classification
+              models is evaluated using metrics such as Kappa, overall accuracy, and Producer accuracy. To enhance accessibility and visualisation, an analysis app
               within GEE and a dedicated monitoring website are developed, providing interactive tools for stakeholders.
             </p>
 
@@ -95,13 +92,15 @@ import ClassifyLegend from "@/components/ClassifyLegend.vue";
         <div>
           <p class="leading-relaxed">
             The best-supervised classification algorithm was determined as Random Forest Classification with and overall accuracy of 82% for 2004 and 82% for 2016.
-            Active flush areas showed slight growth until 2004, stayed steady until 2016, then
-            experienced a significant increase, possibly indicating the ongoing restoration efforts. Conversely, submarginal zones
-            rose until 2004 but steadily declined afterward, likely due to drainage or peat extraction impacting these regions
-            negatively. Marginal and subcentral areas consistently decreased, potentially signifying ongoing habitat loss.
-            Re-wetting and revegetation initiatives could be attributed to the positive trends observed, especially in active
-            flush zones. However, factors like drainage,
-            peat extraction, and climate shifts might have contributed to degradation in the marginal submarginal areas. </p>
+            Change detection was determined, and the positive trend of Active flush Ecotope and decrease in submarginal and marginal areas indicated visibility restoration initiatives.  
+            Peatland's health condition seemed to increase with an increase in Active flush, which experienced a significant increase from 2016 when the second set of restoration initiatives began, 
+            indicating ongoing restoration efforts. On the other hand, marginal and submarginal ecotope decreased, which showed a decrease in the degradation of Clara bog and an increase in restoration efforts. 
+            The integration of NDVI and NDWI facilitated tracking rehydration and regrowth initiatives, which were important in monitoring peatland recovery. 
+            
+            Remote sensing is crucial in detecting patterns of earth observation, and satellite imagery is important in analysis for documenting spatially in high detail spatial changes. The results have highlighted
+            the efforts of different institutions and projects, such as the EU Living project, funded by the EU Life Fund in collaboration with NPWS and National Heritage from 2016 to 2021. Consistent & innovative approaches 
+            in the monitoring of peat bogs are important in the conservation and rejuvenation of peatland habitat with the goal of conserving environmental areas and climate change mitigation
+             </p>
         </div>
        <div>
          <img src="@/assets/change-detection.png"  alt="Clara bog change detection">
